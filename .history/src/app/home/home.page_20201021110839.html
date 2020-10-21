@@ -1,0 +1,310 @@
+<ion-content>
+    <!-- Desktop view -->
+    <div class="desktop">
+        <ion-grid fixed class="ion-no-padding main-container">
+            <ion-row class="ion-align-items-center" style="height: 100%;">
+                <div class="logo" data-sal="zoom-in" data-sal-delay="400">
+                    <ion-img [src]="data?.logo" id='logo' (ionImgDidLoad)="zoomIn($event)"></ion-img>
+                </div>
+                <ion-col size="6">
+                    <div style="margin-left: 4rem">
+                        <div data-sal="slide-right" data-sal-delay="250" data-sal-duration="1200" id="titulo" [ngStyle]="{'font-size' : srcWidth > 1400 ? '60pt': srcWidth > 1200 ? '45pt' : srcWidth > 1000 ? '40pt' : '25pt' }">Obtén tu propia página web</div>
+                        <p data-sal="zoom-in" data-sal-delay="250" data-sal-duration="1200" [ngStyle]="{'font-size' : srcWidth > 1400 ? '20pt': srcWidth > 1200 ? '18pt' : srcWidth > 1000 ? '15pt' : '12pt' }">Potencia tu negocio entrando al mundo digital</p>
+                    </div>
+                </ion-col>
+                <ion-col size="6" style="position: relative;">
+                    <div class="modelo_container shadow">
+                        <div class="dots_container">
+                            <ion-img [src]="data?.dots"></ion-img>
+                        </div>
+                        <div class="modelo">
+                            <ion-img [src]="data?.modelo" (ionImgDidLoad)="zoomIn($event)"></ion-img>
+                        </div>
+                        <div class="lap_container">
+                            <ion-img [src]="data?.lap" (ionImgDidLoad)="zoomIn($event)"></ion-img>
+                        </div>
+                    </div>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+        <div class="arrow-down-blue"></div>
+        <div class="intro">
+            <div data-sal="flip-up" data-sal-delay="250" data-sal-duration="250" class="text_title">¿Qué puedo hacer con mi página web?</div>
+            <p data-sal="zoom-in" data-sal-delay="700" class="ion-text-wrap">Una página web es el principal aliado si quieres tener un Portafolio / CV digital, una tienda en línea o sitio de tu negocio, una tarjeta digital</p>
+        </div>
+        <div class="ecommerce">
+            <div class="arrow-down-white"></div>
+            <ion-grid fixed style="position: relative; margin-top: 1rem;">
+                <ion-row class="ion-align-items-center">
+                    <ion-col size="6">
+                        <div data-sal="slide-right" data-sal-delay="250" data-sal-duration="1200" class="text_title left">Tienda en línea</div>
+                        <p data-sal="zoom-in" data-sal-delay="250" data-sal-duration="1200" class="ion-text-wrap left" style="max-width: 80%;">Desarrolla tu negocio sin límites con una poderosa plataforma de eCommerce</p>
+                    </ion-col>
+                    <ion-col size="6" class="ion-align-self-end">
+                        <div class="radius" style="width: 100%; padding-top: 67.146%;" #divEcommerce id="divEcommerce"></div>
+                        <ion-img class="radius shadow hidden" [src]="data?.ecommerce" (ionImgDidLoad)="imgLoad(ecommerce.el, divEcommerce)" id="ecommerce" #ecommerce></ion-img>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </div>
+        <div class="intro">
+            <div class="arrow-down-blue"></div>
+            <ion-grid fixed style="position: relative; margin-top: 1rem;">
+                <ion-row class="ion-align-items-center">
+                    <ion-col size="6" class="ion-align-self-end">
+                        <div class="radius" style="width: 100%; padding-top: 66.754%;" #divAgenda id="divAgenda"></div>
+                        <ion-img class="radius shadow hidden" [src]="data?.agenda" (ionImgDidLoad)="imgLoad(agenda.el, divAgenda)" id="agenda" #agenda></ion-img>
+                    </ion-col>
+                    <ion-col size="6" style="padding-left: 3rem;">
+                        <div data-sal="slide-left" data-sal-delay="250" data-sal-duration="1200" class="text_title">Agenda / Citas</div>
+                        <p data-sal="zoom-in" data-sal-delay="250" data-sal-duration="1200" class="ion-text-wrap" style="max-width: 80%; text-align: right;">Gestiona tu agenda de forma ágil y eficiente. Para reservar una cita ya no será necesario hacerlo por medio de llamada o en persona. Tu página lo agendará por ti</p>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </div>
+        <div class="ecommerce">
+            <div class="arrow-down-white"></div>
+            <ion-grid fixed style="position: relative; margin-top: 1rem;">
+                <ion-row class="ion-align-items-center">
+                    <ion-col size="6">
+                        <div data-sal="slide-right" data-sal-delay="250" data-sal-duration="1200" class="text_title left">Sitio Web</div>
+                        <p data-sal="zoom-in" data-sal-delay="250" data-sal-duration="1200" class="ion-text-wrap left" style="max-width: 80%;">Dicard hace posible que cualquier negocio/comericante tenga su página web. ¡Descubre cómo!</p>
+                    </ion-col>
+                    <ion-col size="6" class="ion-align-self-end">
+                        <div class="radius" style="width: 100%; padding-top: 66.477%;" #divwebsite id="divwebsite"></div>
+                        <ion-img class="radius shadow hidden" [src]="data?.website" (ionImgDidLoad)="imgLoad(website.el, divwebsite)" id="website" #website></ion-img>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </div>
+        <div class="intro">
+            <div class="arrow-down-blue"></div>
+            <ion-grid fixed style="position: relative; margin-top: 1rem;">
+                <div style="background:  #E1F3FC; height: 100%; width: 100%; position: absolute; border-radius: 50px;"></div>
+                <ion-row class="ion-align-items-center">
+                    <ion-col size="6" class="ion-align-self-center" style="text-align: center;">
+                        <p class="ion-text-wrap" data-sal="zoom-in" data-sal-delay="250" data-sal-duration="1200">Precio</p>
+                        <div data-sal="slide-down" data-sal-delay="250" data-sal-duration="1200" class="text_title" style="font-size: 50pt;">$82.5
+                            <ion-text style="font-size: large;">/ mes</ion-text>
+                        </div>
+                        <p class="ion-text-wrap" data-sal="zoom-in" data-sal-delay="250" data-sal-duration="1200">En suscripción anual</p>
+                    </ion-col>
+                    <ion-col size="6" style="padding-left: 3rem;">
+                        <div class="text_title" data-sal="slide-left" data-sal-delay="250" data-sal-duration="1200">Contáctame</div>
+                        <form #form="ngForm" (submit)="sendMsg()" data-sal="slide-left" data-sal-delay="250" data-sal-duration="1200">
+                            <ion-item lines="none">
+                                <ion-label position="stacked" style="margin-bottom: 0.5rem;" color="medium">Nombre</ion-label>
+                                <ion-input type="text" style="background: white;" required [(ngModel)]="msg.name" name="name"></ion-input>
+                            </ion-item>
+                            <ion-item lines="none">
+                                <ion-label position="stacked" style="margin-bottom: 0.5rem;" color="medium">Teléfono</ion-label>
+                                <ion-input type="tel" [minlength]="10" style="background: white;" required [(ngModel)]="msg.phone" name="phone" placeholder="Número de 10 dígitos"></ion-input>
+                            </ion-item>
+                            <ion-item lines="none">
+                                <ion-label position="stacked" style="margin-bottom: 0.5rem;" color="medium">Correo</ion-label>
+                                <ion-input type="email" style="background: white;" required [(ngModel)]="msg.email" name="email"></ion-input>
+                            </ion-item>
+                            <ion-item lines="none">
+                                <ion-label position="stacked" color="medium">Mensaje</ion-label>
+                                <ion-textarea [autoGrow]="true" type="text" style="background: white;" required [(ngModel)]="msg.msg" name="msg"></ion-textarea>
+                            </ion-item>
+                            <ion-item lines="none">
+                                <ion-button slot="end" type="submit" style="margin-top: 2rem;" [disabled]="sending">
+                                    Enviar
+                                    <ion-spinner slot="end" name="bubbles" *ngIf="sending"></ion-spinner>
+                                </ion-button>
+                            </ion-item>
+                        </form>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </div>
+        <div class="contact_container">
+            <ion-grid fixed style="position: relative; margin-top: 1rem;">
+                <ion-row class="ion-align-items-center">
+                    <ion-col size="6">
+                        <h1 class="text_title left" style="color: white;">Contacto</h1>
+                        <ion-item lines="none">
+                            <ion-icon slot="start" name="location" color="medium"></ion-icon>
+                            <ion-label>
+                                <p>Sierra de Mazamitla #5648</p>
+                                <p>Col. Las Águilas</p>
+                                <p>Zapopan, Jalisco</p>
+                                <p>C.P. 45080</p>
+                            </ion-label>
+                        </ion-item>
+                        <ion-item lines="none">
+                            <ion-icon slot="start" name="call" color="medium"></ion-icon>
+                            <ion-label>
+                                <p>Tel. (33) 3634 6786</p>
+                                <p>Whatsapp (33) 1447 3715</p>
+                            </ion-label>
+                        </ion-item>
+                    </ion-col>
+                    <ion-col size="6" class="ion-align-self-end">
+                        <div style="width: 100%; height: 100%; border-radius: 25px; overflow: hidden; margin-top: 3rem;" class="shadow">
+                            <agm-map style="height: 50vh" [latitude]="20.623331" [longitude]="-103.415538" [zoom]="17" (mapReady)="mapLoaded($event)">
+                                <agm-marker [iconUrl]='{"url": icon,"scaledSize": {"height": 75, "width": 50}}' [latitude]="20.623331" [longitude]="-103.415538" [animation]="'DROP'"></agm-marker>
+                            </agm-map>
+                        </div>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </div>
+    </div>
+
+    <!-- Mobile view -->
+    <div class="mobile">
+        <div class="main_container">
+            <div class="logo_mobile" data-sal="zoom-in" data-sal-delay="400">
+                <ion-img [src]="data?.logo" id='logo' (ionImgDidLoad)="zoomIn($event)"></ion-img>
+            </div>
+            <div class="modelo_container_mobile">
+                <div class="dots_container_mobile">
+                    <ion-img [src]="data?.dots"></ion-img>
+                </div>
+                <div class="modelo_mobile">
+                    <ion-img class="shadow" [src]="data?.modelo" (ionImgDidLoad)="imgLoad(modelo.el, divModelo)" #modelo id="modelo"></ion-img>
+                    <div class="radius" style="width: 100%; padding-top: 117.141%;" #divModelo id="divModelo"></div>
+                </div>
+                <div class="lap_container_mobile" style="max-width: 50vw !important;">
+                    <ion-img [src]="data?.lap" (ionImgDidLoad)="imgLoadLeftEnter($event)"></ion-img>
+                </div>
+            </div>
+            <div style="text-align: center; position: relative; top: 9rem" class="margen">
+                <div data-sal="slide-right" data-sal-delay="250" data-sal-duration="1200" id="titulo" [ngStyle]="{'font-size' : srcWidth > 1400 ? '60pt': srcWidth > 1200 ? '45pt' : srcWidth > 1000 ? '40pt' : '25pt' }">Obtén tu propia página web</div>
+                <p data-sal="zoom-in" data-sal-delay="250" data-sal-duration="1200" [ngStyle]="{'font-size' : srcWidth > 1400 ? '20pt': srcWidth > 1200 ? '18pt' : srcWidth > 1000 ? '15pt' : '12pt' }">Potencia tu negocio entrando al mundo digital</p>
+            </div>
+        </div>
+        <div class="intro_mobile">
+            <div class="arrow-down-blue_mobile"></div>
+            <div data-sal="flip-up" data-sal-delay="250" data-sal-duration="250" class="text_title margen">¿Qué puedo hacer con mi página web?</div>
+            <p data-sal="zoom-in" data-sal-delay="700" class="ion-text-wrap margen">Una página web es el principal aliado si quieres tener un Portafolio / CV digital, una tienda en línea o sitio de tu negocio, una tarjeta digital</p>
+        </div>
+        <div class="ecommerce">
+            <div class="arrow-down-white_mobile"></div>
+            <ion-grid fixed style="margin-top: 1rem;">
+                <ion-row class="ion-align-items-center">
+                    <ion-col size="12" style="text-align: center;">
+                        <div data-sal="slide-right" data-sal-delay="250" data-sal-duration="1200" class="text_title margen">Tienda en línea</div>
+                        <p data-sal="zoom-in" data-sal-delay="250" data-sal-duration="1200" class="ion-text-wrap margen">Desarrolla tu negocio sin límites con una poderosa plataforma de eCommerce</p>
+                    </ion-col>
+                    <ion-col size="12" class="ion-align-self-end">
+                        <div class="radius" style="width: 100%; padding-top: 67.146%;" #divEcommerceMobile id="divEcommerceMobile"></div>
+                        <ion-img class="radius shadow hidden" [src]="data?.ecommerce" (ionImgDidLoad)="imgLoad(ecommerceMob.el, divEcommerceMobile)" id="ecommerceMob" #ecommerceMob></ion-img>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </div>
+        <div class="intro">
+            <div class="arrow-down-blue_mobile"></div>
+            <ion-grid fixed style="margin-top: 1rem;">
+                <ion-row class="ion-align-items-center">
+                    <ion-col size="12" style="text-align: center;">
+                        <div data-sal="slide-left" data-sal-delay="250" data-sal-duration="1200" class="text_title margen">Agenda / Citas</div>
+                        <p data-sal="zoom-in" data-sal-delay="250" data-sal-duration="1200" class="ion-text-wrap margen">Gestiona tu agenda de forma ágil y eficiente. Para reservar una cita ya no será necesario hacerlo por medio de llamada o en persona. Tu página lo agendará por ti</p>
+                    </ion-col>
+                    <ion-col size="12">
+                        <div class="radius" style="width: 100%; padding-top: 66.754%;" #divAgendaMobile id="divAgendaMobile"></div>
+                        <ion-img class="radius shadow hidden" [src]="data?.agenda" (ionImgDidLoad)="imgLoad(agendaMob.el, divAgendaMobile)" id="agendaMob" #agendaMob></ion-img>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </div>
+        <div class="ecommerce">
+            <div class="arrow-down-white_mobile"></div>
+            <ion-grid fixed style="margin-top: 1rem;">
+                <ion-row class="ion-align-items-center">
+                    <ion-col size="12" style="text-align: center;">
+                        <div data-sal="slide-right" data-sal-delay="250" data-sal-duration="1200" class="text_title margen">Sitio Web</div>
+                        <p data-sal="zoom-in" data-sal-delay="250" data-sal-duration="1200" class="ion-text-wrap margen">Dicard hace posible que cualquier negocio/comericante tenga su página web. ¡Descubre cómo!</p>
+                    </ion-col>
+                    <ion-col size="12">
+                        <div class="radius" style="width: 100%; padding-top: 66.477%;" #divwebsiteMobile id="divwebsiteMobile"></div>
+                        <ion-img class="radius shadow hidden" [src]="data?.website" (ionImgDidLoad)="imgLoad(websiteMob.el, divwebsiteMobile)" id="websiteMob" #websiteMob></ion-img>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </div>
+        <div class="intro">
+            <div class="arrow-down-blue_mobile"></div>
+            <ion-grid fixed style="margin-top: 1rem;">
+                <ion-row class="ion-align-items-center">
+                    <ion-col size="12" class="ion-align-self-center" style="text-align: center;">
+                        <p class="ion-text-wrap" data-sal="zoom-in" data-sal-delay="250" data-sal-duration="1200">Precio</p>
+                        <div data-sal="slide-down" data-sal-delay="250" data-sal-duration="1200" class="text_title" style="font-size: 50pt;">$82.5
+                            <ion-text style="font-size: large;">/ mes</ion-text>
+                        </div>
+                        <p class="ion-text-wrap" data-sal="zoom-in" data-sal-delay="250" data-sal-duration="1200">En suscripción anual</p>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </div>
+        <div class="ecommerce">
+            <div class="arrow-down-white_mobile"></div>
+            <ion-grid fixed style="margin-top: 1rem;">
+                <ion-row class="ion-align-items-center">
+                    <ion-col size="12">
+                        <div class="text_title" data-sal="slide-left" data-sal-delay="250" data-sal-duration="1200">Contáctame</div>
+                        <form #form="ngForm" (submit)="sendMsg()" data-sal="slide-left" data-sal-delay="250" data-sal-duration="1200">
+                            <ion-item lines="none">
+                                <ion-label position="stacked" style="margin-bottom: 0.5rem;" color="medium">Nombre</ion-label>
+                                <ion-input type="text" style="background: white;" required [(ngModel)]="msg.name" name="name"></ion-input>
+                            </ion-item>
+                            <ion-item lines="none">
+                                <ion-label position="stacked" style="margin-bottom: 0.5rem;" color="medium">Teléfono</ion-label>
+                                <ion-input type="tel" [minlength]="10" style="background: white;" required [(ngModel)]="msg.phone" name="phone" placeholder="Número de 10 dígitos"></ion-input>
+                            </ion-item>
+                            <ion-item lines="none">
+                                <ion-label position="stacked" style="margin-bottom: 0.5rem;" color="medium">Correo</ion-label>
+                                <ion-input type="email" style="background: white;" required [(ngModel)]="msg.email" name="email"></ion-input>
+                            </ion-item>
+                            <ion-item lines="none">
+                                <ion-label position="stacked" color="medium">Mensaje</ion-label>
+                                <ion-textarea [autoGrow]="true" type="text" style="background: white;" required [(ngModel)]="msg.msg" name="msg"></ion-textarea>
+                            </ion-item>
+                            <ion-item lines="none">
+                                <ion-button slot="end" type="submit" style="margin-top: 2rem;" [disabled]="sending">
+                                    Enviar
+                                    <ion-spinner slot="end" name="bubbles" *ngIf="sending"></ion-spinner>
+                                </ion-button>
+                            </ion-item>
+                        </form>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </div>
+        <div class="contact_container">
+            <ion-grid fixed style="margin-top: 1rem;">
+                <ion-row class="ion-align-items-center">
+                    <ion-col size="12" class="margen">
+                        <h1 class="text_title" style="color: white;">Contacto</h1>
+                        <ion-item lines="none">
+                            <ion-icon slot="start" name="location" color="medium"></ion-icon>
+                            <ion-label>
+                                <p>Sierra de Mazamitla #5648</p>
+                                <p>Col. Las Águilas</p>
+                                <p>Zapopan, Jalisco</p>
+                                <p>C.P. 45080</p>
+                            </ion-label>
+                        </ion-item>
+                        <ion-item lines="none">
+                            <ion-icon slot="start" name="call" color="medium"></ion-icon>
+                            <ion-label>
+                                <p>Tel. (33) 3634 6786</p>
+                                <p>Whatsapp (33) 1447 3715</p>
+                            </ion-label>
+                        </ion-item>
+                    </ion-col>
+                    <ion-col size="12" class="margen">
+                        <div style="width: 80%; height: 100%; border-radius: 25px; overflow: hidden; margin-top: 3rem;" class="shadow">
+                            <agm-map style="height: 50vh" [latitude]="20.623331" [longitude]="-103.415538" [zoom]="17" (mapReady)="mapLoaded($event)">
+                                <agm-marker [iconUrl]='{"url": icon,"scaledSize": {"height": 75, "width": 50}}' [latitude]="20.623331" [longitude]="-103.415538" [animation]="'DROP'"></agm-marker>
+                            </agm-map>
+                        </div>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </div>
+    </div>
+</ion-content>

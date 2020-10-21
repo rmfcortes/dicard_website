@@ -1,0 +1,165 @@
+// Share
+#titulo {
+    color: #090854;
+    font-weight: 700;
+}
+
+// Desktop
+.logo {
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+    width: 5vw;
+}
+
+.modelo_container {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 5rem;
+}
+
+.modelo {
+    max-width: 35vw;
+    max-height: 70vh !important;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.lap_container {
+    position: absolute;
+    bottom: 0;
+    left: -35%;
+    max-width: 30vw;
+}
+
+.dots_container {
+    position: absolute;
+    top: -2rem;
+    right: -2rem;
+    width: 4rem;
+}
+
+.intro {
+    background: white;
+    text-align: center;
+    padding-bottom: 3vw;
+}
+
+.description {
+    color: var(--ion-color-medium);
+    margin-top: 1rem;
+}
+
+.ecommerce {
+    margin-top: 0;
+    background: #E1F3FC;
+    padding-bottom: 3vw;
+}
+
+.contact_container {
+    margin-top: 0;
+    background: #090854;
+    padding-bottom: 3vw;
+}
+
+// Mobile
+.logo_mobile {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    width: 15vw;
+}
+
+.modelo_container_mobile {
+    position: relative;
+    top: 8rem;
+    right: 50%;
+    transform: translate(50%, 0);
+}
+
+.modelo_mobile {
+    max-width: 70vw;
+    max-height: 70vh !important;
+    border-radius: 25px;
+    overflow: hidden;
+    margin-left: 20vw;
+}
+
+.lap_container_mobile {
+    position: absolute;
+    bottom: 0;
+    left: 1rem;
+    max-width: 40vw;
+    z-index: 999;
+}
+
+// Common
+.color_dark {
+    color: #090854;
+}
+
+.shadow {
+    -webkit-box-shadow: -7px 10px 14px -4px rgba(152, 204, 230, 1);
+    -moz-box-shadow: -7px 10px 14px -4px rgba(152, 204, 230, 1);
+    box-shadow: -7px 10px 14px -4px rgba(152, 204, 230, 1);
+}
+
+.text_title {
+    color: #090854;
+    font-weight: 700;
+    font-size: xx-large;
+}
+
+p {
+    color: var(--ion-color-medium)
+}
+
+.arrow-down-blue {
+    width: 0;
+    height: 0;
+    margin: auto;
+    border-left: 3vw solid transparent;
+    border-right: 3vw solid transparent;
+    border-top: 3vw solid #E1F3FC;
+}
+
+.arrow-down-white {
+    width: 0;
+    height: 0;
+    margin: auto;
+    border-left: 3vw solid transparent;
+    border-right: 3vw solid transparent;
+    border-top: 3vw solid white;
+}
+
+.left {
+    margin-left: 3rem;
+}
+
+.vertical_center {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.img-right {
+    position: absolute;
+    right: 10rem;
+    top: 50%;
+    transform: translate(0, -50%);
+    max-width: 40vw;
+}
+
+.radius {
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.notDisplay {
+    display: none;
+}
